@@ -1,0 +1,6 @@
+header {
+    background-color: var(--primary-color);
+    padding: 3%;
+    height: fit-content;
+    border-bottom: 2px solid white;
+}

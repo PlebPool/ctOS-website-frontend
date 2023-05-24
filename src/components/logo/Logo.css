@@ -1,0 +1,20 @@
+.ct {
+    color: var(--primary-color);
+}
+
+.ct-wrapper {
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 3em;
+    background: var(--secondary-color);
+}
+
+.logo {
+    transform: scale(2);
+    height: fit-content;
+    width: fit-content;
+}
+
+.OS {
+    color: var(--secondary-color);
+}

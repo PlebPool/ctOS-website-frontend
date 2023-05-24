@@ -1,0 +1,31 @@
+#footer {
+    border-top: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+
+    /*position: absolute;*/
+    bottom: 0;
+    background-color: var(--primary-color);
+}
+
+#blume-logo {
+    background: var(--secondary-color);
+    margin-right: 2%;
+}
+
+#about-us-body {
+    display: flex;
+    flex-direction: row;
+}
+
+#title {
+    text-align: left;
+}
+
+#copyright {
+    text-align: center;
+}

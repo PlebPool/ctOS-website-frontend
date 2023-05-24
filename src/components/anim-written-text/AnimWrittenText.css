@@ -1,0 +1,42 @@
+@media(max-width: 740px) {
+    .changing-text-wrapper {
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+}
+
+.changing-text-wrapper {
+    padding: 10px;
+    line-height: 1em;
+    background-color: var(--secondary-color);
+    font-size: 50px;
+    display: flex;
+    width: fit-content;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.pre {
+    margin-right: .5em;
+    position: relative;
+}
+
+.changing-text {
+    height: 1em;
+    line-height: 1em;
+    width: fit-content;
+    padding-right: .1em;
+    border-right: 5px solid transparent;
+    animation: blinking 1s step-end infinite;
+    transition: 0s;
+}
+
+@keyframes blinking {
+    50% {
+        border-right: 5px solid var(--primary-color);
+    }
+}

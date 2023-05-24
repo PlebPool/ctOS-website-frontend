@@ -1,0 +1,12 @@
+#canvas {
+  background: var(--primary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  /*position: absolute;*/
+  top: 0;
+  /*z-index: -1;*/
+}
+
+/*#canvas > * {*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*}*/

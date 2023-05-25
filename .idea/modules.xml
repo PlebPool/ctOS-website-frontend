@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../ctos_two.iml" filepath="$PROJECT_DIR$/../ctos_two.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ctOS-website-frontend.iml" filepath="$PROJECT_DIR$/.idea/ctOS-website-frontend.iml" />
     </modules>
   </component>
 </project>

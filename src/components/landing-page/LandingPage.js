@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import "./LandingPage.css";
 import AnimWrittenText from "../anim-written-text/AnimWrittenText";
 
-const words = ["HEALTH", "CONNECTIVITY", "SECURITY", "YOU"];
+const words = ["HEALTH", "CONNECTIVITY", "SECURITY", "YOU", "CRINGE"];
 function LandingPage(props) {
     const [article, setArticle] = useState("London");
     const [users, setUsers] = useState(0);

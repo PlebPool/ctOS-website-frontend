@@ -6,7 +6,10 @@ function AnimWrittenText({text_before, words, interval}) {
     const [currentWord, setCurrentWord] = useState('');
     const [writing, setWriting] = useState(true);
 
+    const [firstWrite, setFirstWrite] = useState(false);
+
     useEffect(() => {
+
         const removeCharacter = () => {
             if (currentWord.length > 0) {
                 setCurrentWord((prevWord) => prevWord.slice(0, -1));
@@ -20,15 +23,15 @@ function AnimWrittenText({text_before, words, interval}) {
             if (currentWord.length < words[currentWordIndex].length) {
                 setCurrentWord((prevWord) => prevWord + words[currentWordIndex][prevWord.length]);
             } else {
-                setTimeout(() => {
-                    setWriting(true);
-                    clearInterval(writeInterval);
-                    setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-                }, 800);
+                setWriting(true);
+                clearInterval(writeInterval);
+                setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+                setTimeout(null, 800);
             }
         };
 
         let writeInterval;
+
         if (writing) {
             writeInterval = setInterval(removeCharacter, interval);
         } else {
@@ -36,7 +39,7 @@ function AnimWrittenText({text_before, words, interval}) {
         }
 
         return () => clearInterval(writeInterval);
-    }, [currentWord, currentWordIndex, words, writing]);
+    }, [currentWord, currentWordIndex, words, writing, interval]);
 
     return (
         <div className={"changing-text-wrapper noselect"}>

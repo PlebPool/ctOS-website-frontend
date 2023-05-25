@@ -12,6 +12,10 @@
     --secondary-color: white;
 }
 
+.html {
+    background-color: var(--primary-color);
+}
+
 .text-element {
     color: var(--secondary-color);
 }
